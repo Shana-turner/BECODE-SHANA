@@ -401,3 +401,7 @@ const user = {
 }
 console.log(user.printAge(user.age))
 console.log(user.printAge(user.aYearHasPast()))
+
+const d = new Date(
+);
+console.log(d)
