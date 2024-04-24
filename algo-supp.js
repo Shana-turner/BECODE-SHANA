@@ -44,4 +44,31 @@ theBigOne("Bonjour, aujourd'hui je vous présente mes petits algorithmes.")
 function aleatoire (max){
     alert(`Un nombre au pif ${Math.round(Math.random()*max)}`)
 }
-aleatoire(20)
+//aleatoire(20)
+
+function majuscule (str){
+    const words = str.toLowerCase().split(' ')
+    //console.log(words)
+    const array =[]
+    words.forEach((word)=>{
+        let firstLetter = word.charAt(0).toUpperCase()
+        //console.log(firstLetter)
+        let secondPart = word.replace(word.charAt(0), firstLetter)
+        array.push(secondPart)
+    })
+    console.log(array.join(' '))
+    
+}
+
+majuscule("salUt, leS gEns")
+
+function repeat (str, num){
+    console.log(str.repeat(num))
+}
+repeat("Hello", 6)
+
+function stringToArray(string){
+    console.log(string.split(" ")) 
+  
+}
+stringToArray("Robin Singh")
