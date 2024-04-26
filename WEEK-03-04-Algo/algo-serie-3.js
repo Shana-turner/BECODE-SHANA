@@ -154,12 +154,13 @@ function findBrokenKeys(stringOk, stringNot){
     i++ 
     } while (i < tabStringOk.length)
     //console.log(letters)
-    
-    return letters.filter(function (letter) {
-        if(letter === letter){
-            return letters
+    let result = []
+    for( const letter of letters){
+        if(!result.includes(letter)){
+            result.push(letter)
         }
-    })
+    }
+    return result
 }
     
 console.log(findBrokenKeys("happy birthday", "hawwy birthday"))
