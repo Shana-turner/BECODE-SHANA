@@ -138,7 +138,7 @@ console.log(convert("33")) */
 
 
 ////Exercice 06////
-function findBrokenKeys(stringOk, stringNot){
+/* function findBrokenKeys(stringOk, stringNot){
     let tabStringOk = stringOk.split('')
     let tabStringNot = stringNot.split('')
        //console.log(tabStringOk)
@@ -165,4 +165,4 @@ function findBrokenKeys(stringOk, stringNot){
     
 console.log(findBrokenKeys("happy birthday", "hawwy birthday"))
 console.log(findBrokenKeys("starry night", "starrq light"))
-console.log(findBrokenKeys("beethoven", "affthoif5"))
+console.log(findBrokenKeys("beethoven", "affthoif5")) */
