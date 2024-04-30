@@ -91,9 +91,9 @@ function caesarCipher(str, numAnvance){
     console.log(tab)
     return tab.join('')
 }
-console.log(caesarCipher("zoo keeper", 2)) // "bqq mggrgt"
-console.log(caesarCipher("bqq mggrgt", -2)) // "zoo keeper
-console.log(caesarCipher("My name is Henrique", 3)) // "pb qdph lv khqultxh "
+//console.log(caesarCipher("zoo keeper", 2)) // "bqq mggrgt"
+//console.log(caesarCipher("bqq mggrgt", -2)) // "zoo keeper
+//console.log(caesarCipher("My name is Henrique", 3)) // "pb qdph lv khqultxh "
 
 
 ////Exercice 04////
@@ -111,11 +111,51 @@ console.log(switchWord("This is a string of words")) //"siht si a gnirts fo sdro
 
 ////Exercice 05////
 /* function reverse(tab){
-    //console.log(tab)
-    let i = tab.length
-    while(tab[--i]){
-        console.log(tab[i])
+    let endIndex = tab.length-1
+    let startIndex = 0
+    while(endIndex >= tab.length/2){
+        let tampon = tab[endIndex]
+        tab[endIndex]= tab[startIndex]
+        tab[startIndex] = tampon
+        
+        endIndex --
+        startIndex ++
     }
+    return tab
+
 }
 
 console.log(reverse(["Artur", "Tèo", "Luna", "Emmanuel"])) */ // ["Emmanuel", "Luna", "Tèo", "Artur"]
+
+
+
+////Exercice 06////
+/* function somme(numArray,sum){
+    let tabSomme =[]
+    let i = 0;
+    while(i < numArray.length){
+        let j = 1;
+        while(j < numArray.length && j != i){
+            if(numArray[i]+numArray[j] === sum){
+                tabSomme.push([numArray[i], numArray[j]])
+            }
+            j++
+        }
+        i++
+    }
+    return tabSomme
+}
+console.log(somme([1, 6, 4, 5, 3, 3], 7)) */
+
+
+
+////Exercice 07////
+function fibonacci(num){
+    let tab =[1]
+    for(let i = 1; i <num-1; i++){
+        tab.push(i)
+    }
+    return tab
+}
+console.log(fibonacci(6)) //[1, 1, 2, 3, 5, 8]
+//console.log(fibonacci(9)) //[1, 1, 2, 3, 5, 8, 13, 21, 34]
