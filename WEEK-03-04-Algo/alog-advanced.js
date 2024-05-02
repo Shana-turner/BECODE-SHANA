@@ -97,15 +97,15 @@ function caesarCipher(str, numAnvance){
 
 
 ////Exercice 04////
-/* function switchWord (str){
+function switchWord (str){
     let reverseAll = str.toLowerCase().split('').reverse().join('')
-    //console.log(reverseAll)
+    console.log(reverseAll)
     let reverseWord = reverseAll.split(' ').reverse().join(' ')
     //console.log(reverseWord)
     return reverseWord
 
 }
-console.log(switchWord("This is a string of words")) //"siht si a gnirts fo sdrow" */
+console.log(switchWord("This is a string of words")) //"siht si a gnirts fo sdrow"
 
 
 
@@ -150,12 +150,22 @@ console.log(somme([1, 6, 4, 5, 3, 3], 7)) */
 
 
 ////Exercice 07////
-function fibonacci(num){
+/* function fibonacci(num){
     let tab =[1]
-    for(let i = 1; i <num-1; i++){
-        tab.push(i)
+    for(let i = 0; i < 2; i++){
+        let number =1
+        number = number +i 
+        tab.push(number)
     }
+    for(let j =3; j< num && j > tab.length-1; j++){
+        number = (tab[j-1])+ (tab[j-2])
+        tab.push(number)
+    }
+
     return tab
 }
 console.log(fibonacci(6)) //[1, 1, 2, 3, 5, 8]
-//console.log(fibonacci(9)) //[1, 1, 2, 3, 5, 8, 13, 21, 34]
+console.log(fibonacci(9)) */ //[1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+
+
