@@ -24,7 +24,7 @@ h1 span{
 .menu div ul li a{
     color: blue;
 }
-.menu div ul li:nth-child(0n+2){
+.blabla + li{
     background-color:purple ;
 }
 .content, a{
