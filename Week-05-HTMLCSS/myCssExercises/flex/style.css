@@ -1,6 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Noto+Sans+Symbols:wght@100..900&display=swap');
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: rgba(45, 68, 128, 1);
+    font-family: "Noto Sans Symbols", sans-serif;
+}
+/*Rectangle*/
+.groupe1{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 18vh;
+}
+.retangle1{
+    background-color: rgba(255, 255, 255, 1);
+    width: 288px;
+    height: 469px;
+    border-radius: 27px;
+    text-align: center; 
+    box-shadow: 5px 20px 50px 0 rgba(0, 0, 0, 0.6);
+}
+h1{
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    
+}
+.groupe{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: -20px;
+}
+.groupe p{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32.8px;
+    letter-spacing: 6%;
+    margin-left: 23px;
+}
+.groupe img{
+    margin-left: 50px;
+}
+hr{
+    width: 188px;
+    color: black;
+    border: none;
+    border-top: 1px black solid;
+    margin-top: 28px;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing:4px;
+    margin-top:8px;
+    color: rgba(41, 41, 41, 1);
+}
+h3{
+    font-family: "Allan", serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: rgba(45, 68, 128, 1);
+    margin-left: 75px;
+    margin-top: -20px;
+}
+button{
+    background-color: rgba(255, 188, 15, 1);
+    color: rgba(37, 56, 104, 1);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32.8px;
+    border: none;
+    border-radius: 34px;
+    text-transform: uppercase;
+    width: 181px;
+    height: 68px;
+    position: absolute;
+    top: 585px;
+    left: 631px;
 }
