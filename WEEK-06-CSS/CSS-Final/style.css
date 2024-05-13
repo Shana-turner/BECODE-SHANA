@@ -8,6 +8,8 @@ body{
 }
 main{
     width: 1110px;
+    margin: auto;
+    padding: auto;
 }
 /*HEADER*/
 header{
@@ -37,4 +39,138 @@ header ul a:hover{
 }
 .logo{
     margin-top: 72px;
+}
+.menu{
+    display: none;
+    width: 40px;
+}
+/*PARTIE 1*/
+.partie1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0px 30px;
+    margin-top: 72px;
+
+}
+.future-section1 img{
+    width: 730px;
+    height: 300px;
+    object-fit: cover;
+}
+.future-section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.future-section2>h1{
+    font-size: 56px;
+    line-height: 56px;
+    font-weight:800;
+    color: rgba(0, 0, 26, 1);
+}
+.future-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.future-detail>p{
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(94, 96, 122, 1);
+    font-weight: 300;
+}
+.future-detail>button{
+    text-transform: uppercase;
+    background-color: rgba(241, 93, 81, 1);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 253, 250, 1);
+    border: none;
+    letter-spacing: 4.38px;
+    width: 185px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.new{
+    background-color: rgba(0, 0, 26, 1);
+    color: white;
+    padding: 32px 24px 32px 24px;
+
+}
+.new>h2{
+    color: rgba(233, 170, 82, 1);
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+.new>hr{
+    color: rgba(94, 96, 122, 1);
+    border: none;
+    border-top: 1px solid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.new>h2+h3{
+    padding-top: 15px;
+}
+/*PARTIE 2*/
+.partie2{
+    height: 129px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.partie2 img{
+    width: 100px;
+    height: 127px;
+    object-fit: cover;
+}
+.un, .deux, .trois{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 24px;
+
+}
+.partie2 h3{
+    color: rgba(197, 198, 206, 1);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+}
+.partie2 h4{
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+    color: rgba(0, 0, 26, 1);
+    margin: 0;
+    padding-top: 12px;
+}
+.partie2 p{
+    color: rgba(94, 96, 122, 1);
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 9px;
+}
+
+
+/*MOBILE*/
+@media only screen and (max-width:375px) {
+    header{
+        width: 343px;
+    }
+    header ul{
+        display: none;
+        
+    }
+    .menu{
+        display: block;
+        margin-top: 34px;
+    }
 }
