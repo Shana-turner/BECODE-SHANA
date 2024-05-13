@@ -1,0 +1,40 @@
+@media only screen and (max-width: 480px){
+    body{
+        background-color: gold;
+    }
+    .b, .c , .d, .e{
+        display: none;
+    }
+}
+@media only screen and (min-width : 481px) and (max-width:  768px) {
+    body{
+        background-color: pink;
+    }
+    .a, .c, .d, .e{
+        display: none;
+    }
+}
+@media only screen and (min-width : 769px) and (max-width:  1280px) {
+    body{
+        background-color: chocolate;
+    }
+    .a, .b, .d, .e{
+        display: none;
+    }
+}
+@media only screen and (min-width : 1281px) and (max-width:  1440px) {
+    body{
+        background-color: cadetblue;
+    }
+    .a, .b, .c, .e{
+        display: none;
+    }
+}
+@media only screen and (min-width : 1441px) and (max-width:  1920px) {
+    body{
+        background-color: cornflowerblue;
+    }
+    .a, .b, .c, .d{
+        display: none;
+    }
+}
