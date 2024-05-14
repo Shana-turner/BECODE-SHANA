@@ -1,0 +1,39 @@
+.item {
+  color: salmon;
+}
+
+.conNav {
+  background-color: blueviolet;
+}
+.conNav .nav {
+  width: 100px;
+  background-color: beige;
+}
+.conNav .nav li {
+  text-transform: uppercase;
+}
+.conNav .nav li:first-child {
+  color: blueviolet;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: cadetblue;
+}
+
+.boxE {
+  width: 150px;
+  height: 150px;
+  background-color: bisque;
+}/*# sourceMappingURL=style.css.map */
