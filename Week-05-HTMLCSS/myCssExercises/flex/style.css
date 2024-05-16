@@ -84,7 +84,6 @@ button{
     text-transform: uppercase;
     width: 181px;
     height: 68px;
-    position: absolute;
-    top: 585px;
-    left: 631px;
+    position: relative;
+    top: -35px;
 }
