@@ -13,12 +13,13 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#" class="home">Home</a></li>
+                <li class="active"><a href="#" class="home">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Articles</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
+        <img src="burger-menu-svgrepo-com.svg" alt="menu" class="menu-burger">
     </header>
     <section class="partie1">
         <div class="texte">
@@ -29,7 +30,7 @@
             <button>Know more</button>
         </div>
         <div class="image">
-            <img src="mister.png" alt="technology mister" width="590px">
+            <img src="mister.png" alt="technology mister" >
         </div>
     </section>
     <section class="partie2">
@@ -45,5 +46,20 @@
             <img class="img5" src="image5.jpeg" alt="Technologie" >
         </div>
     </section>
+
+    <script>
+        const menuBurger = document.querySelector(".menu-burger")
+        const navLinks = document.querySelector(".menu")
+
+        menuBurger.addEventListener('click', ()=>{
+            navLinks.classList.toggle('mobile-menu')
+        })
+
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("header");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+    </script>
 </body>
 </html>
