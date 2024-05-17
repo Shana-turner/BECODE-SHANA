@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height : 1;
+}
+img{
+	width:100%;
+}
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration : none;
+}
+body{
+	font-family: "Commissioner", sans-serif;
+}
+
+/*HEADER*/
+.logo{
+	max-width: 161px;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	margin-left: 8rem;
+}
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+header ul{
+	display: flex;
+	flex-direction: row;
+	padding-left: 3.6rem;
+	gap: 40px;
+}
+.navBar{
+	background-color: rgba(249, 79, 79, 1);
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	width: 53%;
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	align-items: center;
+}
+.navBar ul li a{
+	color: white;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 32px;
+}
+.navBar ul li a:hover{
+	font-weight: 700;
+}
+.btn2{
+	background-color: rgba(25, 25, 33, 1);
+	font-weight: 800;
+	line-height: 19.57px;
+	padding: 22px 35px;
+	color: white;
+}
+.btn2:hover{
+	background-color: rgba(67, 67, 86, 1);
+}
+
+/*SECTION1*/
+.section1 img{
+	max-width: 1200px;
+	height: 800px;
+}
+.section{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
