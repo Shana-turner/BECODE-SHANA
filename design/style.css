@@ -17,7 +17,28 @@ a{
 body{
 	font-family: "Commissioner", sans-serif;
 }
+.btn1{
+	background-color: rgba(249, 79, 79, 1);
+	color: white;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 22.1px;
+	padding: 18px 30px;
 
+}
+.btn1:hover{
+	background-color: rgba(255, 147, 147, 1);
+}
+.btn2{
+	background-color: rgba(25, 25, 33, 1);
+	font-weight: 800;
+	line-height: 19.57px;
+	padding: 18px 35px;
+	color: white;
+}
+.btn2:hover{
+	background-color: rgba(67, 67, 86, 1);
+}
 /*HEADER*/
 .logo{
 	max-width: 161px;
@@ -40,7 +61,7 @@ header ul{
 	background-color: rgba(249, 79, 79, 1);
 	padding-top: 3rem;
 	padding-bottom: 3rem;
-	width: 53%;
+	width: 45%;
 	display: flex;
 	flex-direction: row;
 	gap: 40px;
@@ -55,23 +76,41 @@ header ul{
 .navBar ul li a:hover{
 	font-weight: 700;
 }
-.btn2{
-	background-color: rgba(25, 25, 33, 1);
-	font-weight: 800;
-	line-height: 19.57px;
-	padding: 22px 35px;
-	color: white;
-}
-.btn2:hover{
-	background-color: rgba(67, 67, 86, 1);
-}
+
 
 /*SECTION1*/
-.section1 img{
-	max-width: 1200px;
-	height: 800px;
-}
-.section{
+.section1{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(11, 1fr);
+	grid-template-rows: 100%;
+/* 	margin-left: 8rem; */
+}
+.contenair-texte1{
+	grid-column: 2/7;
+	grid-row: 1;
+	z-index: 1;
+	
+}
+.people-computer{
+	grid-column: 5/12;
+	grid-row: 1;
+}
+.back-liner{
+	background:linear-gradient(to right, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.0001));
+	grid-column: 5/9;
+	grid-row: 1;
+}
+.contenair-texte1 h1{
+	font-size: 80px;
+	font-weight: 800;
+	line-height: 88px;
+}
+.contenair-texte1 p{
+	font-size: 18px;
+	padding-top: 3rem;
+	padding-bottom: 4rem;
+	max-width: 540px;
+	font-weight: 300;
+	line-height: 32px;
+
 }
