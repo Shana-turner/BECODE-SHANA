@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+body{
+    background-color:#91AECD;
+}
+.part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    text-align: center;
+    background-color: #2B6EB6;
+    max-width: 80%;
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 74vh;
+}
+.container::after{
+    content: url(Ash_2.webp);
+    filter: drop-shadow(30px -10px 4px rgba(0, 0, 0, 0.342));
+    position: absolute;
+    top: 66%;
+}
+.container::before{
+    content: '"Do you always need a reason to help somebody" - Ash Ketchum';
+    font-family: "Jaro", sans-serif;
+    position: absolute;
+    top: 80%;
+    right: 20%;
+    text-transform: uppercase;
+    font-size: 4vw;
+}
+h1{
+    text-align: center;
+    font-family: "Jaro", sans-serif;
+}
+img{
+    z-index: 1;
+}
+img:hover{
+    width: 300px;
+}
