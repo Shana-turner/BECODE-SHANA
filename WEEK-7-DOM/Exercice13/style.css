@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height : 1;
+	list-style-type:none;
+	text-decoration : none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+.form{
+    width: 350px;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: -30px;
+}
+img{
+    margin-top: -30px;
+}
+.containerbis{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-weight: 500;
+    font-size: 30px;
+
+}
+.longTexte{
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.text{
+    font-size: 13px;
+    box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+}
+a{
+    color: #0065C0; ;
+}
+a:hover{
+    color: rgb(183, 44, 44);
+    text-decoration: underline;
+}
+label{
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+input{
+    height: 27px;
+}
+#submit{
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #FFD712;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+#submit:hover{
+    background-color: #F7CA00;
+}
+#submit:valid{
+    border: none;
+}
+input{
+    padding-left: 5px;
+    height: 30px;
+    border: 1px solid #A6A6A6;
+    border-radius: 3px;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+/* input:invalid {
+    border: 1px solid red;
+} */
+.containerbis p{
+    padding-top: 10px;
+    font-weight: bold;
+    color: orange;
+}
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.158);
+    font-family: "Roboto", sans-serif;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+footer ul li a{
+    font-size: 10px;
+}
+footer p{
+    font-size: 11px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <img src="amazon-logo-s3f.png" alt="logo" width="200px">
+        <div class="form">
+            <h1>S'identifier</h1>
+            <form action="" method="get">
+                <div class="containerbis ">
+                    <label for="username">Votre nom</label>
+                    <input type="text" id="username" name="username" placeholder="Prénom et nom" required minlength="5" maxlength="10">
+                    <p id="msg-user"></p>
+                </div>
+                <div class="containerbis ">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="nom@domain.com">
+                    <p id="msg-mail"></p>
+                </div>
+                <div class="containerbis ">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="password" required minlength="8" maxlength="15">
+                    <p id="msg-code"></p>
+                </div>
+                <div class="containerbis ">
+                    <label for="passwordConfirm">Entrez le mot de passe à nouveau</label>
+                    <input type="password" name="passwordConfirm" id="passwordConfirm" required>
+                    <p id="msg-codeConfirm"></p>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+            <p class="longTexte">En créant un compte, vous acceptez les <a href="#">conditions d'utilisation et de vente</a> d'Amazon. Consultez notre <a href="#">déclaration de confidentialité</a>, notre <a href="#">politique relative aux cookies</a> et notre <a href="#">politique relative à la publicité ciblée sur les centres d’intérêt</a>.
+            </p>
+            <p class="text">Vous possédez déjà un compte ? <a href="#">Identifiez-vous</a></p>
+        </div>
+        
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">Conditions d'utilisation</a></li>
+            <li><a href="#">Protection de vos informations personnelles</a></li>
+            <li><a href="#">Aide</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Annonces basées sur vos centres d’intérêt</a></li>
+        </ul>
+        <p>© 1996-2024, Amazon.com Inc. ou ses affiliés</p>
+    </footer>
+</body>
+</html>
