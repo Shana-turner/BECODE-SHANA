@@ -1,0 +1,78 @@
+body{
+    text-align: center;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+.cell{
+    font-size: 100px;
+    padding-top: 30px;
+}
+#un{
+    grid-column: 1;
+    grid-row: 1;
+    border: 1px solid white;
+    
+}
+#deux{
+    grid-column: 2;
+    grid-row: 1;
+    border: 1px solid white;
+}
+#trois{
+    grid-column: 3;
+    grid-row: 1;
+    border: 1px solid white;
+}
+#quatre{
+    grid-column: 1;
+    grid-row: 2;
+    border: 1px solid white;
+}
+#cinq{
+    grid-column: 2;
+    grid-row: 2;
+    border: 1px solid white;
+}
+#six{
+    grid-column: 3;
+    grid-row: 2;
+    border: 1px solid white;
+}
+#sept{
+    grid-column: 1;
+    grid-row: 3;
+    border: 1px solid white;
+}
+#huit{
+    grid-column: 2;
+    grid-row: 3;
+    border: 1px solid white;
+}
+#neuf{
+    grid-column: 3;
+    grid-row: 3;
+    border: 1px solid white;
+}
+.restart{
+    background-color:#3f5efb;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+}.restart:hover{
+    background-color: #3f5efb9f;
+}
