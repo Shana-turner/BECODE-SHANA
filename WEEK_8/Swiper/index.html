@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="https://picsum.photos/id/12/500/500" alt=""></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/id/13/500/500" alt=""></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/id/14/500/500" alt=""></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/id/15/500/500" alt=""></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/id/16/500/500" alt=""></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/id/28/500/500" alt=""></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/id/29/500/500" alt=""></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/id/10/500/500" alt=""></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/id/11/500/500" alt=""></div>
+        </div>  
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div ><img src="prev.png" alt="" class="swiper-button-prev"></div>
+        <div> <img src="next.png" alt="" class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
+</body>
+</html>
