@@ -1,0 +1,52 @@
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height : 1;
+	list-style-type:none;
+	text-decoration : none;
+}
+body{
+    background-color: darkslategray;
+    overflow-y: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.supperposition{
+    width: 100vw;
+    height: 200vh;
+    position: relative;
+    display: none;
+
+}
+.modal{
+    display: none;
+    width: 40%;
+    height: 60vh;
+    background-color: beige;
+    border-radius: 2px;
+    position: absolute;
+    top: 20%;
+    left: 33%
+
+}
+#openBtn{
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: beige;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 50px;
+
+}
+.modal span{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.modal span:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
