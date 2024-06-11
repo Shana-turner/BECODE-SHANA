@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <script>
+        
+        const background = document.querySelector('body');
+        
+        const generateBG = (color, delay)=>{
+            const nb = (Math.random() * 0.999).toFixed(2);
+            console.log(nb);
+            return new Promise((resolve,reject) => {
+                if(nb < 0.5){
+                    resolve(setTimeout(()=>{
+                    background.style.backgroundColor = color
+                    },delay));
+                    
+                }else{
+                    reject("oh no! an error");
+                }
+            })
+
+        }
+
+        const rainbow = async ()=>{
+            try{
+                const blue = await generateBG("blue", 1000);
+                const yellow = await generateBG("yellow", 2000);
+                const red = await generateBG("red", 3000);
+                const cyan = await generateBG("cyan", 4000);
+                const violet = await generateBG("violet", 5000);
+                const green = await generateBG("green", 6000);
+            }
+            catch (err){
+                console.log(err);
+            }
+            
+        }
+        rainbow();
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <script>
+        const background = document.querySelector('body')
+const rainbow = new Promise((resolve) => {
+  background.style.backgroundColor = "blue";
+  console.log("blue")
+  resolve();
+})
+
+rainbow.then(()=>{
+  setTimeout(() => {
+    background.style.backgroundColor = "yellow";
+    console.log("yellow");
+  }, 1000);
+}).then(()=>{
+  setTimeout(() => {
+    background.style.backgroundColor = "red";
+    console.log("red");
+  }, 2000);
+}).then(()=>{
+  setTimeout(() => {
+    background.style.backgroundColor = "cyan";
+    console.log("cyan");
+  }, 3000);
+}).then(()=>{
+  setTimeout(() => {
+    background.style.backgroundColor = "violet";
+    console.log("violet");
+  }, 4000);
+}).then(()=>{
+  setTimeout(() => {
+    background.style.backgroundColor = "green";
+    console.log("green");
+  }, 5000);
+}).then(()=>{
+  setTimeout(() => {
+    background.style.backgroundColor = "purple";
+    console.log("purple");
+  }, 6000);
+})
+
+    </script>
+</body>
+</html>
